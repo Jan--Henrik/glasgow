@@ -1,5 +1,7 @@
 # Glasgow Debug Tool
 
+# This is not the official revC2 branch, I just added USB-C for myself!
+
 **Want one? [Subscribe here](https://mailchi.mp/44980ff6f0ab/glasgow-announcements).**
 
 **Let's chat! Our IRC channel is [#glasgow at freenode.net](https://webchat.freenode.net/?channels=glasgow); our discussion forum is [glasgow.whitequark.org](https://glasgow.whitequark.org/).**
