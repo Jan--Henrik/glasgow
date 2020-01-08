@@ -1,4 +1,4 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -12,11 +12,6 @@ Comment1 "Glasgow Debug Tool"
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
 $Comp
 L MCU_Cypress:CY7C68013A-56LTX U1
@@ -33,28 +28,14 @@ F 6 "ic-cy7c68013a-56ltx" H 3550 3850 50  0001 C CNN "1b2-bom-key"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Micro J1
-U 1 1 5ACA0820
-P 1000 4550
-F 0 "J1" H 1000 4900 50  0000 C CNN
-F 1 "USB_B_Micro" V 750 4550 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1150 4500 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/276/0473460001_IO_CONNECTORS-229243.pdf" H 1150 4500 50  0001 C CNN
-F 4 "Molex" H -50 400 50  0001 C CNN "Mfg"
-F 5 "47346-0001" H -50 400 50  0001 C CNN "MPN"
-F 6 "conn-smd-usb-micro-b" H 1000 4550 50  0001 C CNN "1b2-bom-key"
-	1    1000 4550
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR09
 U 1 1 5ACA09A2
-P 1000 5000
-F 0 "#PWR09" H 1000 4750 50  0001 C CNN
-F 1 "GND" H 1150 4950 50  0000 C CNN
-F 2 "" H 1000 5000 50  0001 C CNN
-F 3 "" H 1000 5000 50  0001 C CNN
-	1    1000 5000
+P 1000 5900
+F 0 "#PWR09" H 1000 5650 50  0001 C CNN
+F 1 "GND" H 1150 5850 50  0000 C CNN
+F 2 "" H 1000 5900 50  0001 C CNN
+F 3 "" H 1000 5900 50  0001 C CNN
+	1    1000 5900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -82,7 +63,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 5900 3550 5950
 Wire Wire Line
-	1000 4950 1000 5000
+	1000 5850 1000 5900
 $Comp
 L power:+5V #PWR07
 U 1 1 5ACA0A58
@@ -140,30 +121,30 @@ Wire Wire Line
 	2050 2950 2000 2950
 Connection ~ 2000 2950
 Wire Wire Line
-	2550 4850 2550 4950
-Connection ~ 2550 4950
+	2650 4850 2650 4950
+Connection ~ 2650 4950
 Wire Wire Line
-	2550 4950 2850 4950
-Connection ~ 2650 5050
+	2650 4950 2850 4950
+Connection ~ 2750 5050
 Wire Wire Line
-	2650 4850 2650 5050
+	2750 4850 2750 5050
 Wire Wire Line
-	2650 5050 2850 5050
+	2750 5050 2850 5050
 Wire Wire Line
-	2550 4550 2550 4500
+	2650 4550 2650 4500
 Wire Wire Line
-	2550 4500 2600 4500
+	2650 4500 2700 4500
 Wire Wire Line
-	2650 4500 2650 4550
+	2750 4500 2750 4550
 $Comp
 L power:+3.3V #PWR011
 U 1 1 5ACBABAE
-P 2600 4450
-F 0 "#PWR011" H 2600 4300 50  0001 C CNN
-F 1 "+3.3V" H 2615 4623 50  0000 C CNN
-F 2 "" H 2600 4450 50  0001 C CNN
-F 3 "" H 2600 4450 50  0001 C CNN
-	1    2600 4450
+P 2700 4450
+F 0 "#PWR011" H 2700 4300 50  0001 C CNN
+F 1 "+3.3V" H 2715 4623 50  0000 C CNN
+F 2 "" H 2700 4450 50  0001 C CNN
+F 3 "" H 2700 4450 50  0001 C CNN
+	1    2700 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -174,17 +155,15 @@ Connection ~ 3550 1800
 Wire Wire Line
 	3550 1800 3550 1850
 Wire Wire Line
-	2600 4450 2600 4500
-Connection ~ 2600 4500
+	2700 4450 2700 4500
+Connection ~ 2700 4500
 Wire Wire Line
-	2600 4500 2650 4500
+	2700 4500 2750 4500
 Wire Wire Line
-	2300 4950 2550 4950
-Wire Wire Line
-	2300 5050 2650 5050
-Text Label 2300 4950 0    50   ~ 0
+	2400 4950 2650 4950
+Text Label 2400 4950 0    50   ~ 0
 SDA
-Text Label 2300 5050 0    50   ~ 0
+Text Label 2400 5050 0    50   ~ 0
 SCL
 Wire Wire Line
 	3150 5850 3150 5900
@@ -205,34 +184,32 @@ $EndComp
 $Comp
 L Device:R R3
 U 1 1 5ACCF0F2
-P 1100 5450
-F 0 "R3" H 1150 5450 50  0000 L CNN
-F 1 "100k" V 1100 5450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1030 5450 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 1100 5450 50  0001 C CNN
-F 4 "Yageo" H -50 400 50  0001 C CNN "Mfg"
-F 5 "RC0402FR-13100KL" H -50 400 50  0001 C CNN "MPN"
-F 6 "res-0402-100k" H 1100 5450 50  0001 C CNN "1b2-bom-key"
-	1    1100 5450
+P 1050 6350
+F 0 "R3" H 1100 6350 50  0000 L CNN
+F 1 "100k" V 1050 6350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 980 6350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 1050 6350 50  0001 C CNN
+F 4 "Yageo" H -100 1300 50  0001 C CNN "Mfg"
+F 5 "RC0402FR-13100KL" H -100 1300 50  0001 C CNN "MPN"
+F 6 "res-0402-100k" H 1050 6350 50  0001 C CNN "1b2-bom-key"
+	1    1050 6350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	750  5250 750  5300
+	700  6150 700  6200
 Wire Wire Line
-	900  4950 900  5250
+	700  5850 700  6150
 Wire Wire Line
-	900  5250 750  5250
-Wire Wire Line
-	750  5600 750  5650
+	700  6500 700  6550
 $Comp
 L power:GND #PWR015
 U 1 1 5ACD15FA
-P 750 5700
-F 0 "#PWR015" H 750 5450 50  0001 C CNN
-F 1 "GND" H 755 5527 50  0000 C CNN
-F 2 "" H 750 5700 50  0001 C CNN
-F 3 "" H 750 5700 50  0001 C CNN
-	1    750  5700
+P 700 6600
+F 0 "#PWR015" H 700 6350 50  0001 C CNN
+F 1 "GND" H 705 6427 50  0000 C CNN
+F 2 "" H 700 6600 50  0001 C CNN
+F 3 "" H 700 6600 50  0001 C CNN
+	1    700  6600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -421,15 +398,15 @@ $EndComp
 $Comp
 L Device:C C13
 U 1 1 5ACF7322
-P 750 5450
-F 0 "C13" H 865 5496 50  0000 L CNN
-F 1 "u1" H 865 5405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 788 5300 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 750 5450 50  0001 C CNN
-F 4 "Taiyo Yuden" H -50 400 50  0001 C CNN "Mfg"
-F 5 "TMK105BJ104KV-F" H -50 400 50  0001 C CNN "MPN"
-F 6 "cap-cer-0402-100n" H 750 5450 50  0001 C CNN "1b2-bom-key"
-	1    750  5450
+P 700 6350
+F 0 "C13" H 815 6396 50  0000 L CNN
+F 1 "u1" H 815 6305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 738 6200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 700 6350 50  0001 C CNN
+F 4 "Taiyo Yuden" H -100 1300 50  0001 C CNN "Mfg"
+F 5 "TMK105BJ104KV-F" H -100 1300 50  0001 C CNN "MPN"
+F 6 "cap-cer-0402-100n" H 700 6350 50  0001 C CNN "1b2-bom-key"
+	1    700  6350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -479,15 +456,15 @@ Text Label 2400 3550 0    50   ~ 0
 $Comp
 L Device:R R2
 U 1 1 5AD252CA
-P 2650 4700
-F 0 "R2" H 2600 4700 50  0000 R CNN
-F 1 "2k2" V 2650 4700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2580 4700 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 2650 4700 50  0001 C CNN
-F 4 "Yageo" H 650 -250 50  0001 C CNN "Mfg"
-F 5 "RC0402FR-132K2L" H 650 -250 50  0001 C CNN "MPN"
-F 6 "res-0402-2k2" H 2650 4700 50  0001 C CNN "1b2-bom-key"
-	1    2650 4700
+P 2750 4700
+F 0 "R2" H 2700 4700 50  0000 R CNN
+F 1 "2k2" V 2750 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2680 4700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 2750 4700 50  0001 C CNN
+F 4 "Yageo" H 750 -250 50  0001 C CNN "Mfg"
+F 5 "RC0402FR-132K2L" H 750 -250 50  0001 C CNN "MPN"
+F 6 "res-0402-2k2" H 2750 4700 50  0001 C CNN "1b2-bom-key"
+	1    2750 4700
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -690,7 +667,6 @@ F 3 "" H 4950 6750 50  0001 C CNN
 	1    4950 6750
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1300 4750
 $Comp
 L Mechanical:MountingHole_Pad MK1
 U 1 1 5AD602A3
@@ -766,10 +742,10 @@ Wire Wire Line
 	900  7200 900  7250
 Connection ~ 900  7200
 Wire Wire Line
-	750  5650 1100 5650
+	700  6550 1050 6550
 Wire Wire Line
-	750  5650 750  5700
-Connection ~ 750  5650
+	700  6550 700  6600
+Connection ~ 700  6550
 $Comp
 L Device:C C10
 U 1 1 5AD97C38
@@ -794,7 +770,7 @@ Wire Wire Line
 Wire Wire Line
 	3500 1350 3200 1350
 Connection ~ 3200 1350
-Text Label 950  5250 0    50   ~ 0
+Text Label 750  6150 0    50   ~ 0
 SHLD
 Text Label 2450 4150 0    50   ~ 0
 USB_P
@@ -938,9 +914,7 @@ Entry Wire Line
 	7750 3450 7850 3550
 Entry Wire Line
 	7750 2950 7850 3050
-Wire Wire Line
-	900  5250 1100 5250
-Connection ~ 900  5250
+Connection ~ 700  6150
 $Comp
 L Device:C C19
 U 1 1 5B0DCCFB
@@ -1112,12 +1086,12 @@ $EndComp
 $Comp
 L Graphic:Logo_Open_Hardware_Large #LOGO1
 U 1 1 5B225090
-P 1900 6100
-F 0 "#LOGO1" H 1900 6600 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Large" H 1900 5700 50  0001 C CNN
-F 2 "" H 1900 6100 50  0001 C CNN
-F 3 "~" H 1900 6100 50  0001 C CNN
-	1    1900 6100
+P 2200 5950
+F 0 "#LOGO1" H 2200 6450 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Large" H 2200 5550 50  0001 C CNN
+F 2 "" H 2200 5950 50  0001 C CNN
+F 3 "~" H 2200 5950 50  0001 C CNN
+	1    2200 5950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1879,29 +1853,29 @@ Imax(USB) @ 3V3 = 80 mA\nImax @ 3V3 = 209 mA
 $Comp
 L Connector:TestPoint TP4
 U 1 1 5AE223CE
-P 2550 5150
-F 0 "TP4" H 2500 5400 50  0000 L CNN
-F 1 "SDA" V 2654 5224 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2750 5150 50  0001 C CNN
-F 3 "~" H 2750 5150 50  0001 C CNN
-	1    2550 5150
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint TP5
-U 1 1 5AE22A82
 P 2650 5150
-F 0 "TP5" H 2600 5400 50  0000 C CNN
-F 1 "SCL" V 2754 5224 50  0001 C CNN
+F 0 "TP4" H 2600 5400 50  0000 L CNN
+F 1 "SDA" V 2754 5224 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2850 5150 50  0001 C CNN
 F 3 "~" H 2850 5150 50  0001 C CNN
 	1    2650 5150
 	-1   0    0    1   
 $EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5AE22A82
+P 2750 5150
+F 0 "TP5" H 2700 5400 50  0000 C CNN
+F 1 "SCL" V 2854 5224 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 5150 50  0001 C CNN
+F 3 "~" H 2950 5150 50  0001 C CNN
+	1    2750 5150
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	2550 4950 2550 5150
+	2650 4950 2650 5150
 Wire Wire Line
-	2650 5150 2650 5050
+	2750 5150 2750 5050
 $Comp
 L Connector:TestPoint TP6
 U 1 1 5AE93638
@@ -2016,7 +1990,7 @@ L power:GND #PWR044
 U 1 1 5B2F5672
 P 1750 3900
 F 0 "#PWR044" H 1750 3650 50  0001 C CNN
-F 1 "GND" H 1755 3727 50  0000 C CNN
+F 1 "GND" H 1900 3800 50  0000 C CNN
 F 2 "" H 1750 3900 50  0001 C CNN
 F 3 "" H 1750 3900 50  0001 C CNN
 	1    1750 3900
@@ -2429,13 +2403,9 @@ SDA
 Text Label 7550 4250 2    50   ~ 0
 SCL
 Wire Wire Line
-	2300 4550 2300 4150
+	1050 6150 1050 6200
 Wire Wire Line
-	2200 4250 2200 4650
-Wire Wire Line
-	1100 5250 1100 5300
-Wire Wire Line
-	1100 5600 1100 5650
+	1050 6500 1050 6550
 Wire Wire Line
 	1050 3500 1050 3550
 Wire Wire Line
@@ -2484,13 +2454,11 @@ F 6 "ic-sot23-6-tpd3s014" H 1750 3600 50  0001 C CNN "1b2-bom-key"
 $EndComp
 Connection ~ 2200 4250
 Wire Wire Line
-	1300 4350 1350 4350
+	1600 4350 1650 4350
 Wire Wire Line
 	1050 3500 1350 3500
 Wire Wire Line
-	1300 4550 1600 4550
-Wire Wire Line
-	1300 4650 1600 4650
+	1600 4850 1900 4850
 Wire Wire Line
 	4950 6750 4950 6850
 Wire Wire Line
@@ -2701,22 +2669,17 @@ Wire Wire Line
 $Comp
 L Device:Ferrite_Bead FB1
 U 1 1 5C13076A
-P 1350 4050
-F 0 "FB1" H 1200 4150 50  0000 R CNN
-F 1 "Ferrite_Bead" H 1200 4250 50  0000 R CNN
-F 2 "Inductor_SMD:L_0402_1005Metric" V 1280 4050 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/c51e-794816.pdf" H 1350 4050 50  0001 C CNN
-F 4 "Murata Electronics" H 1350 4050 50  0001 C CNN "Mfg"
-F 5 "BLM15PX601SZ1D" H 1350 4050 50  0001 C CNN "MPN"
-F 6 "ferrite-0402-600" H 1350 4050 50  0001 C CNN "1b2-bom-key"
-	1    1350 4050
+P 1350 3950
+F 0 "FB1" H 1200 4000 50  0000 R CNN
+F 1 "Ferrite_Bead" H 1200 4100 50  0000 R CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" V 1280 3950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/c51e-794816.pdf" H 1350 3950 50  0001 C CNN
+F 4 "Murata Electronics" H 1350 3950 50  0001 C CNN "Mfg"
+F 5 "BLM15PX601SZ1D" H 1350 3950 50  0001 C CNN "MPN"
+F 6 "ferrite-0402-600" H 1350 3950 50  0001 C CNN "1b2-bom-key"
+	1    1350 3950
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1350 4200 1350 4350
-Wire Wire Line
-	1350 3900 1350 3700
-Connection ~ 1350 3700
 Wire Wire Line
 	8850 2850 9150 2850
 Text Label 8850 2850 0    50   ~ 0
@@ -2947,71 +2910,52 @@ Wire Wire Line
 $Comp
 L Device:R R1
 U 1 1 5ACB7B47
-P 2550 4700
-F 0 "R1" H 2500 4700 50  0000 R CNN
-F 1 "2k2" V 2550 4700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2480 4700 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 2550 4700 50  0001 C CNN
-F 4 "Yageo" H 650 -250 50  0001 C CNN "Mfg"
-F 5 "RC0402FR-132K2L" H 650 -250 50  0001 C CNN "MPN"
-F 6 "res-0402-2k2" H 2550 4700 50  0001 C CNN "1b2-bom-key"
-	1    2550 4700
+P 2650 4700
+F 0 "R1" H 2600 4700 50  0000 R CNN
+F 1 "2k2" V 2650 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2580 4700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 2650 4700 50  0001 C CNN
+F 4 "Yageo" H 750 -250 50  0001 C CNN "Mfg"
+F 5 "RC0402FR-132K2L" H 750 -250 50  0001 C CNN "MPN"
+F 6 "res-0402-2k2" H 2650 4700 50  0001 C CNN "1b2-bom-key"
+	1    2650 4700
 	1    0    0    1   
 $EndComp
 $Comp
-L Connector:TestPoint TP15
-U 1 1 5CAEDE5C
-P 1600 4550
-F 0 "TP15" H 1650 4600 50  0000 L CNN
-F 1 "USBDP" V 1704 4624 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1800 4550 50  0001 C CNN
-F 3 "~" H 1800 4550 50  0001 C CNN
-	1    1600 4550
-	1    0    0    -1  
-$EndComp
-Connection ~ 1600 4550
-Wire Wire Line
-	1600 4550 2300 4550
-$Comp
 L Connector:TestPoint TP16
 U 1 1 5CAEE18C
-P 1600 4650
-F 0 "TP16" H 1550 4700 50  0000 R CNN
-F 1 "USBDM" V 1704 4724 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1800 4650 50  0001 C CNN
-F 3 "~" H 1800 4650 50  0001 C CNN
-	1    1600 4650
+P 1900 4850
+F 0 "TP16" H 1950 5000 50  0000 L CNN
+F 1 "USBDM" V 2004 4924 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2100 4850 50  0001 C CNN
+F 3 "~" H 2100 4850 50  0001 C CNN
+	1    1900 4850
 	-1   0    0    1   
 $EndComp
-Connection ~ 1600 4650
-Wire Wire Line
-	1600 4650 2200 4650
 $Comp
 L Connector:TestPoint TP13
 U 1 1 5CAF0599
-P 1350 4350
-F 0 "TP13" V 1450 4350 50  0000 L CNN
-F 1 "VBUS" V 1454 4424 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1550 4350 50  0001 C CNN
-F 3 "~" H 1550 4350 50  0001 C CNN
-	1    1350 4350
+P 1650 4350
+F 0 "TP13" V 1650 4550 50  0000 L CNN
+F 1 "VBUS" V 1754 4424 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1850 4350 50  0001 C CNN
+F 3 "~" H 1850 4350 50  0001 C CNN
+	1    1650 4350
 	0    1    1    0   
 $EndComp
-Connection ~ 1350 4350
 $Comp
 L Connector:TestPoint TP14
 U 1 1 5CAF1844
-P 1350 4950
-F 0 "TP14" V 1250 5100 50  0000 R CNN
-F 1 "USBGND" V 1454 5024 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1550 4950 50  0001 C CNN
-F 3 "~" H 1550 4950 50  0001 C CNN
-	1    1350 4950
+P 1350 5850
+F 0 "TP14" V 1250 6000 50  0000 R CNN
+F 1 "USBGND" V 1454 5924 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1550 5850 50  0001 C CNN
+F 3 "~" H 1550 5850 50  0001 C CNN
+	1    1350 5850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1350 4950 1000 4950
-Connection ~ 1000 4950
+	1350 5850 1000 5850
 $Comp
 L power:+1V2 #PWR0142
 U 1 1 5CC9337B
@@ -3247,6 +3191,110 @@ Wire Notes Line
 	5300 7050 5300 7650
 Text Notes 4550 7750 0    50   ~ 0
 Plug in the device while shorting R40 if it stops enumerating
+$Comp
+L Connector:USB_C_Plug_USB2.0 J1
+U 1 1 5E1816D0
+P 1000 4950
+F 0 "J1" H 800 5800 50  0000 C CNN
+F 1 "USB_C_Plug_USB2.0" H 1000 5700 50  0000 C CNN
+F 2 "Glasgow:USB-C_16Pin" H 1150 4950 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/USB%20Type-C%20Spec%20R2.0%20-%20August%202019.pdf" H 1150 4950 50  0001 C CNN
+F 4 "USB4105-GF-A " H 1000 4950 50  0001 C CNN "MPN"
+F 5 "GCT" H 1000 4950 50  0001 C CNN "Mfg"
+F 6 "" H 1000 4950 50  0001 C CNN "1b2-bom-key"
+	1    1000 4950
+	1    0    0    -1  
+$EndComp
+Connection ~ 1000 5850
+Wire Wire Line
+	2400 5050 2750 5050
+$Comp
+L Connector:TestPoint TP15
+U 1 1 5CAEDE5C
+P 1900 5050
+F 0 "TP15" H 1950 5200 50  0000 L CNN
+F 1 "USBDP" V 2004 5124 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2100 5050 50  0001 C CNN
+F 3 "~" H 2100 5050 50  0001 C CNN
+	1    1900 5050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1600 5050 1900 5050
+$Comp
+L Device:R R52
+U 1 1 5E4A409C
+P 1800 4550
+F 0 "R52" V 1700 4600 50  0000 R CNN
+F 1 "5k1" V 1800 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1730 4550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 1800 4550 50  0001 C CNN
+F 4 "Yageo" H -200 -400 50  0001 C CNN "Mfg"
+F 5 "RC0402FR-132K2L" H -200 -400 50  0001 C CNN "MPN"
+F 6 "res-0402-2k2" H 1800 4550 50  0001 C CNN "1b2-bom-key"
+	1    1800 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R53
+U 1 1 5E4A40A5
+P 1800 4650
+F 0 "R53" V 1700 4700 50  0000 R CNN
+F 1 "5k1" V 1800 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1730 4650 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1664068.pdf" H 1800 4650 50  0001 C CNN
+F 4 "Yageo" H -100 -300 50  0001 C CNN "Mfg"
+F 5 "RC0402FR-135K1L" H -100 -300 50  0001 C CNN "MPN"
+F 6 "res-0402-5k1" H 1800 4650 50  0001 C CNN "1b2-bom-key"
+	1    1800 4650
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1950 4650 2000 4650
+Wire Wire Line
+	2000 4650 2000 4600
+Wire Wire Line
+	2000 4550 1950 4550
+$Comp
+L power:GND #PWR0151
+U 1 1 5E592071
+P 2000 4600
+F 0 "#PWR0151" H 2000 4350 50  0001 C CNN
+F 1 "GND" H 2005 4427 50  0000 C CNN
+F 2 "" H 2000 4600 50  0001 C CNN
+F 3 "" H 2000 4600 50  0001 C CNN
+	1    2000 4600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2000 4600
+Wire Wire Line
+	2000 4600 2000 4550
+Connection ~ 1900 5050
+Wire Wire Line
+	2300 4150 2300 5050
+Wire Wire Line
+	1900 5050 2300 5050
+Connection ~ 1900 4850
+Wire Wire Line
+	1900 4850 2200 4850
+Wire Wire Line
+	2200 4250 2200 4850
+Wire Wire Line
+	1650 4550 1600 4550
+Wire Wire Line
+	1650 4650 1600 4650
+Wire Wire Line
+	1350 3800 1350 3700
+Connection ~ 1350 3700
+Wire Wire Line
+	1350 4100 1350 4150
+Wire Wire Line
+	1350 4150 1650 4150
+Wire Wire Line
+	1650 4150 1650 4350
+Connection ~ 1650 4350
+Wire Wire Line
+	700  6150 1050 6150
 Wire Bus Line
 	4700 6250 7850 6250
 Wire Bus Line
