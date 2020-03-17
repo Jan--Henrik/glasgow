@@ -2458,7 +2458,7 @@ Wire Wire Line
 Wire Wire Line
 	1050 3500 1350 3500
 Wire Wire Line
-	1600 4850 1900 4850
+	1600 4850 1650 4850
 Wire Wire Line
 	4950 6750 4950 6850
 Wire Wire Line
@@ -3191,21 +3191,6 @@ Wire Notes Line
 	5300 7050 5300 7650
 Text Notes 4550 7750 0    50   ~ 0
 Plug in the device while shorting R40 if it stops enumerating
-$Comp
-L Connector:USB_C_Plug_USB2.0 J1
-U 1 1 5E1816D0
-P 1000 4950
-F 0 "J1" H 800 5800 50  0000 C CNN
-F 1 "USB_C_Plug_USB2.0" H 1000 5700 50  0000 C CNN
-F 2 "Glasgow:USB-C_16Pin" H 1150 4950 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/USB%20Type-C%20Spec%20R2.0%20-%20August%202019.pdf" H 1150 4950 50  0001 C CNN
-F 4 "USB4105-GF-A " H 1000 4950 50  0001 C CNN "MPN"
-F 5 "GCT" H 1000 4950 50  0001 C CNN "Mfg"
-F 6 "" H 1000 4950 50  0001 C CNN "1b2-bom-key"
-	1    1000 4950
-	1    0    0    -1  
-$EndComp
-Connection ~ 1000 5850
 Wire Wire Line
 	2400 5050 2750 5050
 $Comp
@@ -3220,7 +3205,7 @@ F 3 "~" H 2100 5050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1600 5050 1900 5050
+	1600 5050 1650 5050
 $Comp
 L Device:R R52
 U 1 1 5E4A409C
@@ -3295,6 +3280,32 @@ Wire Wire Line
 Connection ~ 1650 4350
 Wire Wire Line
 	700  6150 1050 6150
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 5E62D70A
+P 1000 4950
+F 0 "J1" H 1107 5817 50  0000 C CNN
+F 1 "USB" H 1107 5726 50  0000 C CNN
+F 2 "otter:USB-C 16Pin" H 1150 4950 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1150 4950 50  0001 C CNN
+	1    1000 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5150 1650 5150
+Wire Wire Line
+	1650 5150 1650 5050
+Connection ~ 1650 5050
+Wire Wire Line
+	1650 5050 1900 5050
+Wire Wire Line
+	1600 4950 1650 4950
+Wire Wire Line
+	1650 4950 1650 4850
+Connection ~ 1650 4850
+Wire Wire Line
+	1650 4850 1900 4850
+Connection ~ 1000 5850
 Wire Bus Line
 	4700 6250 7850 6250
 Wire Bus Line

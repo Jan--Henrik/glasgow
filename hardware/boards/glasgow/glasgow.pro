@@ -1,4 +1,4 @@
-update=Mi 08 Jan 2020 01:31:46 CET
+update=Di 17 Mär 2020 13:16:46 CET
 version=1
 last_client=kicad
 [general]
@@ -12,6 +12,16 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=revC2/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -217,7 +227,7 @@ Enabled=1
 [pcbnew/Layer.Cmts.User]
 Enabled=1
 [pcbnew/Layer.Eco1.User]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.Eco2.User]
 Enabled=0
 [pcbnew/Layer.Edge.Cuts]
@@ -257,13 +267,3 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.2
 dPairViaGap=0.25
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=revC2/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
